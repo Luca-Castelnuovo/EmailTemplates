@@ -123,7 +123,7 @@
 [/#macro]
 
 [#macro header]
-  <header class="app-header">
+  [#-- <header class="app-header">
     <div class="right-menu">
       <nav>
         <ul>
@@ -131,7 +131,7 @@
         </ul>
       </nav>
     </div>
-  </header>
+  </header> --]
 
   [#nested/]
 [/#macro]
@@ -160,6 +160,12 @@
 
 [#macro main title="Login"]
 <main class="page-body container">
+  <div class="row center-xs">
+    <div class="col-xs col-sm-8 col-md-6 col-lg-5 col-xl-4">
+      <img src="https://api.castelnuovo.xyz/imgpush/fa419069-481d-4253-bcab-7c43b9cdfca9.png" alt="FusionAuth" height="auto" width="100%">
+    </div>
+  </div>
+
   [@printErrorAlerts/]
   [@printInfoAlerts/]
   <div class="row center-xs">
@@ -174,7 +180,8 @@
       </div>
     </div>
   </div>
-  <div class="row center-xs">
+
+  [#-- <div class="row center-xs">
     <div class="col-xs col-sm-8 col-md-6 col-lg-5 col-xl-4">
       <label class="select">
         <select id="locale-select" name="locale" class="select">
@@ -185,7 +192,8 @@
         </select>
       </label>
     </div>
-  </div>
+  </div> --]
+
 </main>
 [/#macro]
 
@@ -193,10 +201,10 @@
   [#nested/]
 
   [#-- Powered by FusionAuth branding, remove if you like. --]
-  <div style="position: fixed; bottom: 5px; right: 0; padding-bottom: 5px; padding-right: 10px;">
+  [#--<div style="position: fixed; bottom: 5px; right: 0; padding-bottom: 5px; padding-right: 10px;">
     <span style="padding-right: 5px;">Powered by </span>
     <img src="/images/logo-gray.svg" alt="FusionAuth" height="24" style="margin-bottom: -7px;">
-  </div>
+  </div> --]
 [/#macro]
 
 [#-- Below are the social login buttons and helpers --]
