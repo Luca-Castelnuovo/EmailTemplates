@@ -180,10 +180,9 @@
       </div>
     </div>
   </div>
-
-  [#-- <div class="row center-xs">
+  <div class="row center-xs">
     <div class="col-xs col-sm-8 col-md-6 col-lg-5 col-xl-4">
-      <label class="select">
+      <label class="select" style="visibility: hidden;">
         <select id="locale-select" name="locale" class="select">
           <option value="en" [#if locale == 'en']selected[/#if]>English</option>
             [#list theme.additionalLocales() as l]
@@ -192,8 +191,7 @@
         </select>
       </label>
     </div>
-  </div> --]
-
+  </div>
 </main>
 [/#macro]
 
@@ -201,7 +199,7 @@
   [#nested/]
 
   [#-- Powered by FusionAuth branding, remove if you like. --]
-  [#--<div style="position: fixed; bottom: 5px; right: 0; padding-bottom: 5px; padding-right: 10px;">
+  [#-- <div style="position: fixed; bottom: 5px; right: 0; padding-bottom: 5px; padding-right: 10px;">
     <span style="padding-right: 5px;">Powered by </span>
     <img src="/images/logo-gray.svg" alt="FusionAuth" height="24" style="margin-bottom: -7px;">
   </div> --]
